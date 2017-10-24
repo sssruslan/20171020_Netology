@@ -50,7 +50,6 @@ def count_word(original_text):
 def sort_top(word_value):
     l = lambda word_value: word_value[1]
     sort_list = sorted(word_value.items(), key = l, reverse = True)
-    #sort_list = sorted(word_value.items(), key = lambda (key, value): value, reverse = True)
     count = 1
     top_10 = {}
     for i in sort_list:
